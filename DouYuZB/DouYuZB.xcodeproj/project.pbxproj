@@ -7,27 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1854B5EB20906CD70074513A /* UIBarButtonItem-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1854B5EA20906CD70074513A /* UIBarButtonItem-Extension.swift */; };
 		18682D0120902A0600B8024B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18682D0020902A0600B8024B /* AppDelegate.swift */; };
 		18682D0620902A0600B8024B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18682D0420902A0600B8024B /* Main.storyboard */; };
 		18682D0820902A0600B8024B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18682D0720902A0600B8024B /* Assets.xcassets */; };
 		18682D0B20902A0600B8024B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18682D0920902A0600B8024B /* LaunchScreen.storyboard */; };
-		18682D2020902BFC00B8024B /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18682D1F20902BFC00B8024B /* Home.storyboard */; };
-		18682D2220902C1F00B8024B /* Live.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18682D2120902C1F00B8024B /* Live.storyboard */; };
-		18682D2420902C3200B8024B /* Follow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18682D2320902C3200B8024B /* Follow.storyboard */; };
-		18682D2720902C7F00B8024B /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18682D2620902C7F00B8024B /* Profile.storyboard */; };
+		18682D2920903E8600B8024B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18682D2820903E8600B8024B /* MainViewController.swift */; };
+		188F9CBF2090608E001900F1 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 188F9CBD2090608E001900F1 /* Home.storyboard */; };
+		188F9CC1209060BA001900F1 /* Live.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 188F9CC0209060BA001900F1 /* Live.storyboard */; };
+		188F9CC420906108001900F1 /* Follow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 188F9CC220906108001900F1 /* Follow.storyboard */; };
+		188F9CC620906125001900F1 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 188F9CC520906125001900F1 /* Profile.storyboard */; };
+		188F9CC8209064E0001900F1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188F9CC7209064E0001900F1 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1854B5EA20906CD70074513A /* UIBarButtonItem-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem-Extension.swift"; sourceTree = "<group>"; };
 		18682CFD20902A0600B8024B /* DouYuZB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DouYuZB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18682D0020902A0600B8024B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18682D0520902A0600B8024B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		18682D0720902A0600B8024B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18682D0A20902A0600B8024B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18682D0C20902A0600B8024B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		18682D1F20902BFC00B8024B /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
-		18682D2120902C1F00B8024B /* Live.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Live.storyboard; sourceTree = "<group>"; };
-		18682D2320902C3200B8024B /* Follow.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Follow.storyboard; sourceTree = "<group>"; };
-		18682D2620902C7F00B8024B /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		18682D2820903E8600B8024B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		188F9CBE2090608E001900F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = DouYuZB/Classes/Main/Controller/Base.lproj/Home.storyboard; sourceTree = "<group>"; };
+		188F9CC0209060BA001900F1 /* Live.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Live.storyboard; sourceTree = "<group>"; };
+		188F9CC320906108001900F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = DouYuZB/Classes/Main/Controller/Base.lproj/Follow.storyboard; sourceTree = "<group>"; };
+		188F9CC520906125001900F1 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		188F9CC7209064E0001900F1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +111,7 @@
 		18682D1520902AE300B8024B /* Live */ = {
 			isa = PBXGroup;
 			children = (
-				18682D2120902C1F00B8024B /* Live.storyboard */,
+				188F9CC0209060BA001900F1 /* Live.storyboard */,
 			);
 			path = Live;
 			sourceTree = "<group>";
@@ -113,7 +119,7 @@
 		18682D1620902AF900B8024B /* Follow */ = {
 			isa = PBXGroup;
 			children = (
-				18682D2320902C3200B8024B /* Follow.storyboard */,
+				188F9CC220906108001900F1 /* Follow.storyboard */,
 			);
 			path = Follow;
 			sourceTree = "<group>";
@@ -129,6 +135,7 @@
 		18682D1820902B3700B8024B /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				1854B5EA20906CD70074513A /* UIBarButtonItem-Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -137,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				18682D0420902A0600B8024B /* Main.storyboard */,
+				18682D2820903E8600B8024B /* MainViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -165,7 +173,8 @@
 		18682D1D20902B9800B8024B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				18682D1F20902BFC00B8024B /* Home.storyboard */,
+				188F9CBD2090608E001900F1 /* Home.storyboard */,
+				188F9CC7209064E0001900F1 /* HomeViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -180,7 +189,7 @@
 		18682D2520902C5900B8024B /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				18682D2620902C7F00B8024B /* Profile.storyboard */,
+				188F9CC520906125001900F1 /* Profile.storyboard */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -247,10 +256,10 @@
 				18682D0B20902A0600B8024B /* LaunchScreen.storyboard in Resources */,
 				18682D0820902A0600B8024B /* Assets.xcassets in Resources */,
 				18682D0620902A0600B8024B /* Main.storyboard in Resources */,
-				18682D2220902C1F00B8024B /* Live.storyboard in Resources */,
-				18682D2020902BFC00B8024B /* Home.storyboard in Resources */,
-				18682D2720902C7F00B8024B /* Profile.storyboard in Resources */,
-				18682D2420902C3200B8024B /* Follow.storyboard in Resources */,
+				188F9CC1209060BA001900F1 /* Live.storyboard in Resources */,
+				188F9CBF2090608E001900F1 /* Home.storyboard in Resources */,
+				188F9CC620906125001900F1 /* Profile.storyboard in Resources */,
+				188F9CC420906108001900F1 /* Follow.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +271,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				18682D0120902A0600B8024B /* AppDelegate.swift in Sources */,
+				18682D2920903E8600B8024B /* MainViewController.swift in Sources */,
+				1854B5EB20906CD70074513A /* UIBarButtonItem-Extension.swift in Sources */,
+				188F9CC8209064E0001900F1 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +294,22 @@
 				18682D0A20902A0600B8024B /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		188F9CBD2090608E001900F1 /* Home.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				188F9CBE2090608E001900F1 /* Base */,
+			);
+			name = Home.storyboard;
+			sourceTree = "<group>";
+		};
+		188F9CC220906108001900F1 /* Follow.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				188F9CC320906108001900F1 /* Base */,
+			);
+			name = Follow.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -398,11 +426,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = DouYuZB/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.shunheng.DouYuZB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -412,11 +444,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = DouYuZB/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.shunheng.DouYuZB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
