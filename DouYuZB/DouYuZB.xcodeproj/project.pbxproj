@@ -18,6 +18,10 @@
 		188F9CC420906108001900F1 /* Follow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 188F9CC220906108001900F1 /* Follow.storyboard */; };
 		188F9CC620906125001900F1 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 188F9CC520906125001900F1 /* Profile.storyboard */; };
 		188F9CC8209064E0001900F1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188F9CC7209064E0001900F1 /* HomeViewController.swift */; };
+		18DC1F8320920F4B00911E5B /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DC1F8220920F4B00911E5B /* PageContentView.swift */; };
+		18DC1F852092154300911E5B /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DC1F842092154300911E5B /* UIColor-Extension.swift */; };
+		18E64AA82090C3E800B858B3 /* PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E64AA72090C3E800B858B3 /* PageTitleView.swift */; };
+		18E64AAA2090C80700B858B3 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E64AA92090C80700B858B3 /* Common.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +38,10 @@
 		188F9CC320906108001900F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = DouYuZB/Classes/Main/Controller/Base.lproj/Follow.storyboard; sourceTree = "<group>"; };
 		188F9CC520906125001900F1 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		188F9CC7209064E0001900F1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		18DC1F8220920F4B00911E5B /* PageContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageContentView.swift; sourceTree = "<group>"; };
+		18DC1F842092154300911E5B /* UIColor-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
+		18E64AA72090C3E800B858B3 /* PageTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTitleView.swift; sourceTree = "<group>"; };
+		18E64AA92090C80700B858B3 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				18682D1820902B3700B8024B /* Extension */,
+				18E64AA92090C80700B858B3 /* Common.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -136,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				1854B5EA20906CD70074513A /* UIBarButtonItem-Extension.swift */,
+				18DC1F842092154300911E5B /* UIColor-Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -159,6 +169,8 @@
 		18682D1B20902B8A00B8024B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				18E64AA72090C3E800B858B3 /* PageTitleView.swift */,
+				18DC1F8220920F4B00911E5B /* PageContentView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -271,8 +283,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				18682D0120902A0600B8024B /* AppDelegate.swift in Sources */,
+				18DC1F852092154300911E5B /* UIColor-Extension.swift in Sources */,
 				18682D2920903E8600B8024B /* MainViewController.swift in Sources */,
+				18E64AA82090C3E800B858B3 /* PageTitleView.swift in Sources */,
+				18DC1F8320920F4B00911E5B /* PageContentView.swift in Sources */,
 				1854B5EB20906CD70074513A /* UIBarButtonItem-Extension.swift in Sources */,
+				18E64AAA2090C80700B858B3 /* Common.swift in Sources */,
 				188F9CC8209064E0001900F1 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
