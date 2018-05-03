@@ -12,10 +12,11 @@ private let KTitleViewH: CGFloat = 40
 
 class HomeViewController: UIViewController {
     
-    private lazy var pageTitleView: PageTitleView = {
+    private lazy var pageTitleView: PageTitleView = {[weak self] in
         let titleFrame = CGRect(x: 0, y: kStatusBarH + kNavigationBarH, width: kScreenW, height: KTitleViewH)
         let titles = ["推荐","游戏","娱乐","趣玩"]
         let titleView = PageTitleView(frame: titleFrame, titles: titles)
+        titleView.deletage = self
         return titleView
     }()
     
@@ -33,7 +34,7 @@ class HomeViewController: UIViewController {
         }
         
         let contentView = PageContentView(frame: contentFrame, childVcs: childVcs, parentViewController: self)
-        
+        contentView.delegate = self
         return contentView
     }()
     
@@ -45,7 +46,7 @@ class HomeViewController: UIViewController {
     }
     
 }
-//MARK:-设置UI界面
+//MARK: -设置UI界面
 extension HomeViewController{
     private func setupUI(){
         // 0.不需要调整UIScrollView的内边距,此行代码加了没起什么作用，于是决定先不用
@@ -80,5 +81,19 @@ extension HomeViewController{
         
         navigationItem.rightBarButtonItems = [historyItme,searchItme,qrcodeItme]
         
+    }
+}
+
+//MARK: -遵守pageTitleViewDelegate协议
+extension HomeViewController: PageTitleViewDelegate{
+    func pageTitleView(titleView: PageTitleView, selectedIndex index: Int) {
+        pageContentView.setCuttentIndex(currentIndex: index)
+    }
+}
+
+//MARK: -遵守pageContentViewDeleagate协议
+extension HomeViewController: PageContentViewDelegate{
+    func pageContentView(contentView: PageContentView, progrss: CGFloat, sourceIndex: Int, targetIndex: Int) {
+        pageTitleView.setTitleWithProgess(progess: progrss, sourceIndex: sourceIndex, targetInde: targetIndex)
     }
 }
