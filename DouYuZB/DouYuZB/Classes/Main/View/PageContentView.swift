@@ -33,6 +33,7 @@ class PageContentView: UIView {
         //2.创建UICollectionView
         let collectionView = UICollectionView(frame: CGRect.zero, collectionViewLayout: layout)
         collectionView.showsVerticalScrollIndicator = false
+        collectionView.showsHorizontalScrollIndicator = false;
         collectionView.isPagingEnabled = true
         collectionView.bounces = false
         collectionView.dataSource = self
@@ -95,6 +96,7 @@ extension PageContentView : UICollectionViewDataSource{
 //MARK: -遵守UICollectionViewDelegate
 extension PageContentView: UICollectionViewDelegate{
     
+    //开始拖动，这个方法只会调一次
     func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
         
         isForbidScrollDelegate = false
@@ -115,9 +117,9 @@ extension PageContentView: UICollectionViewDelegate{
         //2.判断左滑还是右滑
         let currentOffsetX = scrollView.contentOffset.x
         let scrollViewW = scrollView.bounds.width
-        
         if currentOffsetX > startOffetX { //左滑
             //1.计算progress
+            //floor取整
             progress = currentOffsetX / scrollViewW - floor(currentOffsetX / scrollViewW)
             
             //2.计算sourceIndex

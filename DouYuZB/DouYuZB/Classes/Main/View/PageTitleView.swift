@@ -111,7 +111,6 @@ extension PageTitleView{
         let lineH: CGFloat = 0.5
         bottomLine.frame = CGRect(x: 0, y: frame.height - lineH, width: frame.width, height: lineH)
         addSubview(bottomLine)
-        
         //2.添加ScrollLine
         //2.1获取第一个Lable
         guard let firstLable = titleLables.first else{return}

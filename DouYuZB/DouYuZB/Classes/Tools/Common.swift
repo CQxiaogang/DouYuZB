@@ -11,6 +11,7 @@ import UIKit
 let kStatusBarH: CGFloat = 20
 
 let kNavigationBarH: CGFloat = 44
+let kTabBarH: CGFloat = 44
 //屏幕的宽
 let kScreenW = UIScreen.main.bounds.width
 //屏幕的高

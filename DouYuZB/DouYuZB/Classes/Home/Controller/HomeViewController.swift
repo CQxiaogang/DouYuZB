@@ -22,12 +22,13 @@ class HomeViewController: UIViewController {
     
     private lazy var pageContentView: PageContentView = {[weak self] in
         //1.确认内容的frame
-        let contentH = kScreenH-kStatusBarH-kNavigationBarH-KTitleViewH
+        let contentH = kScreenH-kStatusBarH-kNavigationBarH-kTabBarH-KTitleViewH
         let contentFrame = CGRect(x: 0, y: kStatusBarH + kNavigationBarH + KTitleViewH, width: kScreenW, height: contentH)
 
         //2.确认所以的控制器
         var childVcs = [UIViewController]()
-        for _ in 0..<4{
+        childVcs.append(RecommendViewController())
+        for _ in 0..<3{
             let vc = UIViewController()
             vc.view.backgroundColor = UIColor(r: CGFloat(arc4random_uniform(255)), g: CGFloat(arc4random_uniform(255)), b: CGFloat(arc4random_uniform(255)))
             childVcs.append(vc)
@@ -41,6 +42,7 @@ class HomeViewController: UIViewController {
     //系统回掉函数
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         //设置UI界面
         setupUI()
     }
@@ -50,9 +52,9 @@ class HomeViewController: UIViewController {
 extension HomeViewController{
     private func setupUI(){
         // 0.不需要调整UIScrollView的内边距,此行代码加了没起什么作用，于是决定先不用
-        automaticallyAdjustsScrollViewInsets = false
+//        automaticallyAdjustsScrollViewInsets = false
         
-        // 1.设置导航栏
+        //1.设置导航栏
         setupNavigationBar()
         
         //2.添加TitleView
@@ -64,7 +66,7 @@ extension HomeViewController{
         
     }
     
-    // 导航栏设置
+    //导航栏设置
     private func setupNavigationBar(){
         
         //1.设置左侧的Itme
