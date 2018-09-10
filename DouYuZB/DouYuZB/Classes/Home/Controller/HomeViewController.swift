@@ -28,7 +28,8 @@ class HomeViewController: UIViewController {
         //2.确认所以的控制器
         var childVcs = [UIViewController]()
         childVcs.append(RecommendViewController())
-        for _ in 0..<3{
+        childVcs.append(GameViewController())
+        for _ in 0..<2{
             let vc = UIViewController()
             vc.view.backgroundColor = UIColor(r: CGFloat(arc4random_uniform(255)), g: CGFloat(arc4random_uniform(255)), b: CGFloat(arc4random_uniform(255)))
             childVcs.append(vc)
@@ -52,7 +53,7 @@ class HomeViewController: UIViewController {
 extension HomeViewController{
     private func setupUI(){
         // 0.不需要调整UIScrollView的内边距,此行代码加了没起什么作用，于是决定先不用
-//        automaticallyAdjustsScrollViewInsets = false
+        // automaticallyAdjustsScrollViewInsets = false
         
         //1.设置导航栏
         setupNavigationBar()

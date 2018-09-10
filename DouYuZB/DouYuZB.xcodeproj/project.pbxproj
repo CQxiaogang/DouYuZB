@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		183997C7214652B00041078A /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183997C6214652B00041078A /* GameViewController.swift */; };
 		1854B5EB20906CD70074513A /* UIBarButtonItem-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1854B5EA20906CD70074513A /* UIBarButtonItem-Extension.swift */; };
 		18682D0120902A0600B8024B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18682D0020902A0600B8024B /* AppDelegate.swift */; };
 		18682D0620902A0600B8024B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18682D0420902A0600B8024B /* Main.storyboard */; };
@@ -28,6 +29,8 @@
 		188F9CC620906125001900F1 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 188F9CC520906125001900F1 /* Profile.storyboard */; };
 		188F9CC8209064E0001900F1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188F9CC7209064E0001900F1 /* HomeViewController.swift */; };
 		18C0F92C20C030FD0077567F /* NSDate-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C0F92B20C030FD0077567F /* NSDate-Extension.swift */; };
+		18C8291D21465E6100A41EE8 /* RecommendCycleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C8291C21465E6100A41EE8 /* RecommendCycleView.swift */; };
+		18C8291F21465EE900A41EE8 /* RecommendCycleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18C8291E21465EE900A41EE8 /* RecommendCycleView.xib */; };
 		18DC1F8320920F4B00911E5B /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DC1F8220920F4B00911E5B /* PageContentView.swift */; };
 		18DC1F852092154300911E5B /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DC1F842092154300911E5B /* UIColor-Extension.swift */; };
 		18E64AA82090C3E800B858B3 /* PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E64AA72090C3E800B858B3 /* PageTitleView.swift */; };
@@ -39,6 +42,7 @@
 
 /* Begin PBXFileReference section */
 		09ED3B29023458A6C167F33F /* Pods-DouYuZB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DouYuZB.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DouYuZB/Pods-DouYuZB.debug.xcconfig"; sourceTree = "<group>"; };
+		183997C6214652B00041078A /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		1854B5EA20906CD70074513A /* UIBarButtonItem-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem-Extension.swift"; sourceTree = "<group>"; };
 		18682CFD20902A0600B8024B /* DouYuZB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DouYuZB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18682D0020902A0600B8024B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +67,8 @@
 		188F9CC520906125001900F1 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		188F9CC7209064E0001900F1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		18C0F92B20C030FD0077567F /* NSDate-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSDate-Extension.swift"; sourceTree = "<group>"; };
+		18C8291C21465E6100A41EE8 /* RecommendCycleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendCycleView.swift; sourceTree = "<group>"; };
+		18C8291E21465EE900A41EE8 /* RecommendCycleView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecommendCycleView.xib; sourceTree = "<group>"; };
 		18DC1F8220920F4B00911E5B /* PageContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageContentView.swift; sourceTree = "<group>"; };
 		18DC1F842092154300911E5B /* UIColor-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
 		18E64AA72090C3E800B858B3 /* PageTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTitleView.swift; sourceTree = "<group>"; };
@@ -221,6 +227,8 @@
 			children = (
 				18708A5820B11C3B0015926D /* CollectionHeaderView.swift */,
 				18708A5920B11C3B0015926D /* CollectionHeaderView.xib */,
+				18C8291C21465E6100A41EE8 /* RecommendCycleView.swift */,
+				18C8291E21465EE900A41EE8 /* RecommendCycleView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -231,6 +239,7 @@
 				188F9CBD2090608E001900F1 /* Home.storyboard */,
 				188F9CC7209064E0001900F1 /* HomeViewController.swift */,
 				18708A5520B10AF40015926D /* RecommendViewController.swift */,
+				183997C6214652B00041078A /* GameViewController.swift */,
 				18708A5720B10BA40015926D /* DouYuZB-Bridging-Header.h */,
 			);
 			path = Controller;
@@ -346,6 +355,7 @@
 				18682D0620902A0600B8024B /* Main.storyboard in Resources */,
 				188F9CC1209060BA001900F1 /* Live.storyboard in Resources */,
 				188F9CBF2090608E001900F1 /* Home.storyboard in Resources */,
+				18C8291F21465EE900A41EE8 /* RecommendCycleView.xib in Resources */,
 				18708A6320B1733E0015926D /* CollectionPrettyCell.xib in Resources */,
 				188F9CC620906125001900F1 /* Profile.storyboard in Resources */,
 				188F9CC420906108001900F1 /* Follow.storyboard in Resources */,
@@ -415,10 +425,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18C8291D21465E6100A41EE8 /* RecommendCycleView.swift in Sources */,
 				18C0F92C20C030FD0077567F /* NSDate-Extension.swift in Sources */,
 				18682D0120902A0600B8024B /* AppDelegate.swift in Sources */,
 				18708A5A20B11C3B0015926D /* CollectionHeaderView.swift in Sources */,
 				18DC1F852092154300911E5B /* UIColor-Extension.swift in Sources */,
+				183997C7214652B00041078A /* GameViewController.swift in Sources */,
 				18FB007220C03856000D2499 /* AnchorGroup.swift in Sources */,
 				18708A5620B10AF40015926D /* RecommendViewController.swift in Sources */,
 				18682D2920903E8600B8024B /* MainViewController.swift in Sources */,

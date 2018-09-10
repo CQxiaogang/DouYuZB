@@ -45,6 +45,9 @@ class RecommendViewController: UIViewController {
         collectionView.register(UINib(nibName: "CollectionHeaderView", bundle: nil), forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: kHeaderViewID)
         return collectionView
     }()
+//    private lazy var cycleView : RecommendCycleView = {
+//        
+//    }()
     
     //MARK: 系统会调函数
     override func viewDidLoad() {
