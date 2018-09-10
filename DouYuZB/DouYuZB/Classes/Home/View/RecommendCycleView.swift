@@ -9,6 +9,10 @@
 import UIKit
 
 class RecommendCycleView: UIView {
+    override func awakeFromNib() {
+        //设置该控件不随着父控件的拉伸而拉伸
+        autoresizingMask = UIViewAutoresizing()
+    }
     
 }
 //MARK:- 提供一个快速创建Viewde方法
