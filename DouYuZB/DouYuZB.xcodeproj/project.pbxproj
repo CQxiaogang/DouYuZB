@@ -33,6 +33,7 @@
 		18C8291F21465EE900A41EE8 /* RecommendCycleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18C8291E21465EE900A41EE8 /* RecommendCycleView.xib */; };
 		18DC1F8320920F4B00911E5B /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DC1F8220920F4B00911E5B /* PageContentView.swift */; };
 		18DC1F852092154300911E5B /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DC1F842092154300911E5B /* UIColor-Extension.swift */; };
+		18E0F8A82147BDD500684570 /* CycleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E0F8A72147BDD500684570 /* CycleModel.swift */; };
 		18E64AA82090C3E800B858B3 /* PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E64AA72090C3E800B858B3 /* PageTitleView.swift */; };
 		18E64AAA2090C80700B858B3 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E64AA92090C80700B858B3 /* Common.swift */; };
 		18FB007220C03856000D2499 /* AnchorGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FB007120C03856000D2499 /* AnchorGroup.swift */; };
@@ -71,6 +72,7 @@
 		18C8291E21465EE900A41EE8 /* RecommendCycleView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecommendCycleView.xib; sourceTree = "<group>"; };
 		18DC1F8220920F4B00911E5B /* PageContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageContentView.swift; sourceTree = "<group>"; };
 		18DC1F842092154300911E5B /* UIColor-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
+		18E0F8A72147BDD500684570 /* CycleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CycleModel.swift; sourceTree = "<group>"; };
 		18E64AA72090C3E800B858B3 /* PageTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTitleView.swift; sourceTree = "<group>"; };
 		18E64AA92090C80700B858B3 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		18FB007120C03856000D2499 /* AnchorGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorGroup.swift; sourceTree = "<group>"; };
@@ -248,6 +250,7 @@
 		18682D1E20902B9800B8024B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				18E0F8A72147BDD500684570 /* CycleModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -433,6 +436,7 @@
 				183997C7214652B00041078A /* GameViewController.swift in Sources */,
 				18FB007220C03856000D2499 /* AnchorGroup.swift in Sources */,
 				18708A5620B10AF40015926D /* RecommendViewController.swift in Sources */,
+				18E0F8A82147BDD500684570 /* CycleModel.swift in Sources */,
 				18682D2920903E8600B8024B /* MainViewController.swift in Sources */,
 				18E64AA82090C3E800B858B3 /* PageTitleView.swift in Sources */,
 				18DC1F8320920F4B00911E5B /* PageContentView.swift in Sources */,

@@ -74,14 +74,23 @@ extension RecommendViewController{
         
         //将cycleView添加到collectionView中
         collectionView .addSubview(cycleView)
+        
+        //设置collectionView的内边距
+        collectionView.contentInset = UIEdgeInsets(top: kCycleViewH, left: 0, bottom: 0, right: 0)
     }
 }
 
 //MARK: 请求数据
 extension RecommendViewController{
     private func loadDate(){
+        // 1.请求推荐数据
         recommendVM.requestData {
             self.collectionView.reloadData()
+        }
+        
+        // 2.请求轮播数据
+        recommendVM.requestCycleData {
+            self.cycleView.cycleModels = self.recommendVM.cycleModels
         }
     }
 }

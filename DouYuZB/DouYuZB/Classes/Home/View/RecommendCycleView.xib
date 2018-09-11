@@ -14,8 +14,40 @@
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="RecommendCycleView" customModule="DouYuZB" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="jxI-kG-I4A">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="0.0" id="KbR-Kc-FH3">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="iN0-l3-epB" id="cUA-H1-Nv2"/>
+                    </connections>
+                </collectionView>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="AQK-GG-f6J">
+                    <rect key="frame" x="326" y="113" width="39" height="37"/>
+                    <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="currentPageIndicatorTintColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </pageControl>
+            </subviews>
             <color key="backgroundColor" red="0.91137957572937012" green="0.46194624900817871" blue="0.54236066341400146" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="AQK-GG-f6J" secondAttribute="trailing" constant="10" id="1FN-fn-9ye"/>
+                <constraint firstAttribute="bottom" secondItem="jxI-kG-I4A" secondAttribute="bottom" id="aSK-7S-LA1"/>
+                <constraint firstItem="AQK-GG-f6J" firstAttribute="bottom" secondItem="jxI-kG-I4A" secondAttribute="bottom" id="fnb-7U-ieh"/>
+                <constraint firstItem="jxI-kG-I4A" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="hJn-TX-vzF"/>
+                <constraint firstItem="jxI-kG-I4A" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="oIG-zY-Icc"/>
+                <constraint firstAttribute="trailing" secondItem="jxI-kG-I4A" secondAttribute="trailing" id="wR2-Gx-X52"/>
+            </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="collectionView" destination="jxI-kG-I4A" id="btG-kd-lhB"/>
+                <outlet property="pageControl" destination="AQK-GG-f6J" id="hBn-ES-ZTa"/>
+            </connections>
             <point key="canvasLocation" x="46" y="51.5"/>
         </view>
     </objects>
